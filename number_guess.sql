@@ -92,13 +92,14 @@ ALTER TABLE ONLY public.user_stories ALTER COLUMN user_id SET DEFAULT nextval('p
 -- Data for Name: user_stories; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.user_stories VALUES (1, 'Mike', 5, 7, 12, 433);
 
 
 --
 -- Name: user_stories_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.user_stories_user_id_seq', 1, false);
+SELECT pg_catalog.setval('public.user_stories_user_id_seq', 1, true);
 
 
 --
