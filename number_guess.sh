@@ -3,7 +3,7 @@ PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
 NUMBER=$((RANDOM % 1000 +1))
 echo "Enter your username:"
 read USERNAME
-NAME=$($PSQL "SELECT min(username) from user_stories WHERE username='$USERNAME'" )
+NAME=$($PSQL "SELECT username FROM user_stories WHERE username='$USERNAME'" | tr -d '[:space:]')
 GAMES_PLAYED=$($PSQL "SELECT sum(games_played) from user_stories WHERE username='$USERNAME'")
 BEST_GAME=$($PSQL "SELECT min(best_game) from user_stories WHERE username='$USERNAME'")
 
