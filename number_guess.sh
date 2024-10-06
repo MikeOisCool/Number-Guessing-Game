@@ -33,6 +33,6 @@ count=0
 if [[ $GUESS == $SECRET_NUMBER ]];then
   count=$((count+1))
   echo "You guessed it in $count tries. The secret number was $SECRET_NUMBER."
-elif [[ $GUESS >= $SECRET_NUMBER ]];then
+ [[ $GUESS >= $SECRET_NUMBER ]];then
  echo "worng"
 fi
