@@ -92,9 +92,8 @@ ALTER TABLE ONLY public.user_stories ALTER COLUMN user_id SET DEFAULT nextval('p
 -- Data for Name: user_stories; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.user_stories VALUES (1, 'Mike', 5, 7, 12, 433);
-INSERT INTO public.user_stories VALUES (2, 'Mike', 6, 7, 15, 53);
-INSERT INTO public.user_stories VALUES (3, 'Mike', 7, 6, 6, 553);
+INSERT INTO public.user_stories VALUES (1, 'Mike', 1, 7, 12, 433);
+
 
 
 --
