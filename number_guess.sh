@@ -33,8 +33,6 @@ else
 fi
 
 
-echo $SECRET_NUMBER
-
 echo "Guess the secret number between 1 and 1000:"
 while true;do
   read GUESS
